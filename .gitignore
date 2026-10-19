@@ -1,0 +1,17 @@
+# Large observational data and local analysis products
+eventinfo/
+logs/
+misc/
+.organization/
+
+# Local editor, environment, and Python cache files
+.vscode/
+.venv/
+venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
