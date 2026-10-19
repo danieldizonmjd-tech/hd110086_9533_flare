@@ -20,6 +20,8 @@ Existing figures are in `plots/`.
 
 Flux extraction logs for sources 477 and 969 in ObsIDs 1586, 9532, and 9533, together with a combined flux summary, are in `logs/`.
 
+Source, background, and wing-extraction region definitions are included in `eventinfo/regions/`.
+
 ## Python environment
 
 Use Python 3.11 or newer in an analysis environment:

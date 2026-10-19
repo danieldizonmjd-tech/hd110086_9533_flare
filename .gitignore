@@ -1,5 +1,6 @@
 # Large observational data and local analysis products
-eventinfo/
+eventinfo/*
+!eventinfo/regions/
 misc/
 .organization/
 
