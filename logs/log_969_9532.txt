@@ -1,0 +1,71 @@
+srcflux (27 August 2025)
+          infile = 9532/repro/acisf09532_repro_evt2.fits
+             pos = 12:39:56.969 -11:39:29.38
+         outroot = flux_969_9532
+           bands = default
+         regions = simple
+          srcreg = 
+          bkgreg = 
+         bkgresp = yes
+       psfmethod = ideal
+         psffile = 
+            conf = 0.9
+         binsize = 1
+         rmffile = 
+         arffile = 
+           model = xspowerlaw.pow1
+       paramvals = pow1.PhoIndex=2.0
+        absmodel = xsphabs.abs1
+       absparams = abs1.nH=%GAL%
+           abund = angr
+      pluginfile = 
+         fovfile = 
+        asolfile = 
+         mskfile = 
+        bpixfile = 
+         dtffile = 
+         ecffile = CALDB
+       marx_root = 
+        parallel = yes
+           nproc = INDEF
+          tmpdir = /tmp
+     random_seed = -1
+         clobber = yes
+         verbose = 1
+            mode = ql
+
+Processing OBI 001
+Extracting counts
+Setting Ideal PSF : alpha=1 , beta=0
+Getting net rate and confidence limits
+Getting model independent fluxes 
+Getting model fluxes 
+Getting photon fluxes 
+Getting variability
+Running tasks in parallel with 8 processors.
+Running aprates for flux_969_9532_0001_broad_rates.par
+Running eff2evt for flux_969_9532_broad_0001_src.dat
+Running eff2evt for flux_969_9532_broad_0001_bkg.dat
+Making response files for flux_969_9532_0001
+Running fluximage for flux_969_9532_0001
+Making Lightcurve for source 1
+Running modeflux for region 1
+Using GAL=0.0371 for source 1
+Adding net rates to output
+Appending flux results onto output
+Appending photflux results onto output
+Computing Net fluxes
+Adding model fluxes to output
+Scaling model flux confidence limits
+Appending variability results onto output
+
+
+Summary of source fluxes
+
+      Position                               0.5 - 7.0 keV                           
+                                             Value        90% Conf Interval          
+#0001|12 39 56.96 -11 39 29.3 Rate           0.00064 c/s (0.000496,0.000784)         
+                              Flux           1.01E-14 erg/cm2/s (7.82E-15,1.23E-14)  
+                              Mod.Flux       6.22E-15 erg/cm2/s (4.82E-15,7.62E-15)  
+                              Unabs Mod.Flux 6.61E-15 erg/cm2/s (5.13E-15,8.1E-15)   
+
