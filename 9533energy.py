@@ -38,7 +38,7 @@ fig, axes = plt.subplots(3, 1, figsize=(11, 8), sharex=True)
 
 axes[0].step(time_ks, soft, where="post", color="blue")
 axes[0].set_ylabel("Soft ~ counts/s")
-axes[0].set_title("HDD110086_9533 Energy Analysis\nSoft: 0.5–1.2 keV, Hard: 1.2–7 keV")
+axes[0].set_title("HD110086_9533 Energy Analysis\nSoft: 0.5–1.2 keV, Hard: 1.2–7 keV")
 
 axes[1].step(time_ks, hard, where="post", color="red")
 axes[1].set_ylabel("Hard ~ counts/s")
