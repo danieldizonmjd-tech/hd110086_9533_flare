@@ -8,9 +8,9 @@ from astropy.stats import bayesian_blocks
 root = Path(__file__).resolve().parent
 filename = root / 'eventinfo/observations/9533/repro/acisf09533_repro_evt2.fits'
 
-t0 = 344609527.309310           # ref time from the light curve
+t0 = 344609527.309310  # ref time from the light curve
 xc, yc = 4646.8904, 3699.1736   # HD 110086 position in sky pixels
-radius = 7.32                   # 3.6 arcsec in sky pixels
+radius = 7.32 # 3.6 arcsec in sky pixels
 
 with fits.open(filename) as f:
     data = f["EVENTS"].data
