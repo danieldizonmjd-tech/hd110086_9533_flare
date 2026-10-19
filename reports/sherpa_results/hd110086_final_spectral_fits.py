@@ -1,4 +1,4 @@
-# this is an export of sherpas results.
+# this is an export of sherpa's results on fitting.
 from pathlib import Path as _DataPath
 DATA_ROOT = _DataPath(__file__).resolve().parents[2]
 import numpy
