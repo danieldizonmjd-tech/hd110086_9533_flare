@@ -1,8 +1,6 @@
+# this is an export of sherpas results.
 from pathlib import Path as _DataPath
-
-# Resolve inputs and plots from the data folder, regardless of the terminal directory.
 DATA_ROOT = _DataPath(__file__).resolve().parents[2]
-
 import numpy
 from sherpa.astro.ui import *
 
