@@ -65,7 +65,7 @@ print("Maximum net rate:", np.nanmax(net_rate))
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 7), sharex=True)
 
 ax1.plot(time_ks, source_rate, color="black", lw=1.2, drawstyle="steps-mid")
-ax1.plot(time_ks, scaled_background, color="red", linestyle="--", lw=1.2, drawstyle="steps-mid", label="Scaled background")
+ax1.plot(time_ks, scaled_background, color="red", linestyle="--", lw=1.2, drawstyle="steps-mid")
 ax1.set_title("HD110086_9533 Source vs Background")
 ax1.set_ylabel("Count rate ~ counts/s")
 ax1.grid(alpha=0.25)
@@ -81,5 +81,7 @@ for ax in (ax1, ax2):
     ax.axvspan(flare_start, flare_end, color="orange", alpha=0.15)
 
 plt.tight_layout()
+for ax in plt.gcf().axes:
+    ax.grid(False)
 plt.savefig(root / 'plots/OBS_9533_source_background.png', dpi=300, bbox_inches="tight")
 plt.show()

@@ -63,6 +63,7 @@ ax.set_ylabel("Count rate ~ counts/s")
 ax.set_title("HD110086_9533 Bayesian Blocks\n0.5–7 keV")
 ax.grid(alpha=0.25)
 plt.tight_layout()
+plt.grid(False)
 plt.savefig(root / 'plots/OBS_9533_bayesian_blocks.png', dpi=300)
 plt.show()
 

@@ -77,5 +77,7 @@ plt.ylabel("Count rate ~ counts/s")
 plt.title("HD110086_9533 Flare Measurements")
 plt.grid(alpha=0.25)
 plt.tight_layout()
+for ax in plt.gcf().axes:
+    ax.grid(False)
 plt.savefig(root / 'plots/OBS_9533_flare_measurements.png', dpi=300)
 plt.show()

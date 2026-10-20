@@ -52,6 +52,8 @@ for ax in axes:
     ax.axvspan(70, 75, color="orange", alpha=0.15)
     ax.grid(alpha=0.2)
 
+for ax in axes:
+    ax.grid(False)
 plt.tight_layout()
 plt.savefig(root / 'plots/OBS_9533_energy_analysis.png', dpi=300)
 plt.show()
