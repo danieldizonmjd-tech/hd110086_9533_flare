@@ -3,7 +3,7 @@ import numpy as np
 from astropy.io import fits
 from astropy.time import Time
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 
 with fits.open(root / 'eventinfo/products/lightcurves/hd110086_9533_200s.fits') as f:
     data = f["LIGHTCURVE"].data

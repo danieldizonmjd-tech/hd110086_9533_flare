@@ -5,7 +5,7 @@ import matplotlib.patheffects as path_effects
 from astropy.io import fits
 from scipy.optimize import curve_fit
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 
 with fits.open(root / 'eventinfo/products/lightcurves/hd110086_9533_200s.fits') as hdul:
     data = hdul["LIGHTCURVE"].data

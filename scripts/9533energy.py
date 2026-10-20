@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 
 
 def read_lc(name):

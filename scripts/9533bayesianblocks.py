@@ -5,7 +5,7 @@ from astropy.io import fits
 from astropy.time import Time
 from astropy.stats import bayesian_blocks
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 filename = root / 'eventinfo/observations/9533/repro/acisf09533_repro_evt2.fits'
 
 t0 = 344609527.309310  # ref time from the light curve

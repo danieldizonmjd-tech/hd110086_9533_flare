@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 
 with fits.open(root / 'eventinfo/products/diagnostics/hd110086_dither.fits') as f:
     d = f["AREAFRACTION"].data

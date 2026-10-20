@@ -4,7 +4,7 @@ from astropy.io import fits
 from astropy.time import Time
 
 # folder above this script, so it works from any terminal directory
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[1]
 
 hdul = fits.open(root / 'eventinfo/products/lightcurves/hd110086_9533_200s.fits')
 data = hdul['LIGHTCURVE'].data
