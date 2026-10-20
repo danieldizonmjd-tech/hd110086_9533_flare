@@ -65,7 +65,7 @@ print("Maximum net rate:", np.nanmax(net_rate))
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 7), sharex=True)
 
 ax1.plot(time_ks, source_rate, color="black", lw=1.2, drawstyle="steps-mid")
-ax1.plot(time_ks, scaled_background, color="red", linestyle="--", lw=1.2, drawstyle="steps-mid")
+ax1.plot(time_ks, scaled_background, color="red", linestyle="--", lw=1.2, drawstyle="steps-mid", label="Scaled background")
 ax1.set_title("HD110086_9533 Source vs Background")
 ax1.set_ylabel("Count rate ~ counts/s")
 ax1.grid(alpha=0.25)
